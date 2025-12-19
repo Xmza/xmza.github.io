@@ -3,63 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain Рассрочка | Этичный бизнес</title>
+    <title>Mountain Рассрочка</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-slate-900 font-['Inter']">
+<body class="bg-white text-gray-900">
+    <nav class="p-6 max-w-5xl mx-auto"><a href="index.html" class="text-sm text-gray-500">← Назад</a></nav>
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        <h1 class="text-3xl font-bold mb-6">Mountain Рассрочка</h1>
+        <div class="bg-gray-100 rounded-xl h-64 mb-10 flex items-center justify-center text-gray-400 italic">Скриншоты: Редактор договора / График платежей</div>
 
-    <nav class="p-8 max-w-6xl mx-auto">
-        <a href="index.html" class="text-slate-400 hover:text-orange-600 transition font-bold flex items-center gap-2">
-            ← Назад к экосистеме
-        </a>
-    </nav>
-
-    <main class="max-w-6xl mx-auto px-6 py-12">
-        <div class="flex flex-col md:flex-row gap-12 items-center mb-20">
-            <div class="flex-1">
-                <div class="inline-block px-3 py-1 bg-orange-100 text-orange-600 rounded-lg text-xs font-bold mb-4 uppercase">Murabaha Solution</div>
-                <h1 class="text-5xl font-extrabold mb-6 leading-tight">Mountain Рассрочка</h1>
-                <p class="text-xl text-slate-500">Этичный бизнес на вершине порядка. Прозрачный учет, автоматизация договоров и контроль дисциплины оплат.</p>
-            </div>
-            <div class="flex-1 w-full h-80 bg-slate-100 rounded-[3rem] border-4 border-white shadow-2xl flex items-center justify-center overflow-hidden">
-                <!-- Место для скриншота: <img src="img/rassrochka-main.png"> -->
-                <span class="text-slate-400 font-medium italic text-center px-10">Здесь будет скриншот интерфейса управления рассрочками</span>
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 mb-20">
-            <div class="p-8 bg-slate-50 rounded-[2rem]">
-                <div class="text-2xl mb-4">⚖️</div>
-                <h4 class="font-bold mb-2">Умный расчет</h4>
-                <p class="text-sm text-slate-500">Фиксированная наценка в момент сделки. Никаких скрытых процентов и пеней в соответствии с нормами Мурабаха.</p>
-            </div>
-            <div class="p-8 bg-slate-50 rounded-[2rem]">
-                <div class="text-2xl mb-4">📄</div>
-                <h4 class="font-bold mb-2">Печать документов</h4>
-                <p class="text-sm text-slate-500">Мгновенное формирование договоров и приходных кассовых ордеров (ПКО) прямо из интерфейса.</p>
-            </div>
-            <div class="p-8 bg-slate-50 rounded-[2rem]">
-                <div class="text-2xl mb-4">🛡️</div>
-                <h4 class="font-bold mb-2">Черный список</h4>
-                <p class="text-sm text-slate-500">Полноценная база клиентов с историей договоров, статусами оплат и защитой от недобросовестных покупателей.</p>
-            </div>
-        </div>
-
-        <div class="bg-slate-900 rounded-[3rem] p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="grid md:grid-cols-2 gap-12">
             <div>
-                <h3 class="text-3xl font-bold mb-2">Готовы автоматизировать этичные продажи?</h3>
-                <p class="text-slate-400">Напишите нам для получения персонального предложения по внедрению.</p>
+                <h2 class="text-xl font-bold mb-4">Спецификация ПО</h2>
+                <ul class="space-y-3 text-gray-600">
+                    <li>• Расчет параметров сделки по нормам Мурабаха (фиксированная наценка).</li>
+                    <li>• Система учета поручителей и их влияния на условия договора.</li>
+                    <li>• Автоматическая генерация графиков платежей с округлением.</li>
+                    <li>• Печать договоров и приходных кассовых ордеров (ПКО).</li>
+                    <li>• Ведение клиентской базы и «черного списка».</li>
+                </ul>
             </div>
-            <a href="mailto:hattardu@yandex.ru" class="bg-orange-500 hover:bg-orange-400 text-white px-10 py-4 rounded-2xl font-bold transition whitespace-nowrap">
-                Запросить демо
-            </a>
-        </div>
-        
-        <div class="mt-12 text-center text-xs text-slate-400 uppercase tracking-widest font-bold">
-            React + TypeScript + Dexie.js (Offline-first)
+            <div class="border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pl-10 md:pt-0">
+                <h2 class="text-xl font-bold mb-4">Технические детали</h2>
+                <p class="text-sm text-gray-500 mb-2">База данных: IndexedDB (Dexie.js).</p>
+                <p class="text-sm text-gray-500 mb-4">Безопасность: Отсутствие внешних API-запросов. Локальное хранение.</p>
+                <a href="mailto:hattardu@yandex.ru" class="inline-block bg-black text-white px-6 py-2 rounded text-sm font-bold">Запросить Demo</a>
+            </div>
         </div>
     </main>
-
 </body>
 </html>
