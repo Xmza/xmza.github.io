@@ -3,36 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain-ERP | Детали</title>
+    <title>Mountain ERP | Описание</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-900">
-    <nav class="p-6 max-w-5xl mx-auto"><a href="index.html" class="text-sm text-gray-500">← Назад</a></nav>
-    <main class="max-w-5xl mx-auto px-6 py-10">
-        <h1 class="text-3xl font-bold mb-6">Mountain-ERP</h1>
-        <div class="bg-gray-100 rounded-xl h-64 mb-10 flex items-center justify-center text-gray-400 italic">Скриншоты интерфейса (Склад / POS)</div>
-        
-        <div class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-xl font-bold mb-4">Функциональные возможности</h2>
-                <ul class="space-y-3 text-gray-600">
-                    <li>• Учет товарных остатков и инвентаризация.</li>
-                    <li>• Рабочее место кассира (POS) и печать чеков.</li>
-                    <li>• Модуль «Мурабаха» для реализации товаров в рассрочку.</li>
-                    <li>• Формирование отчетов о прибылях и убытках (P&L).</li>
-                    <li>• Аналитика эффективности товаров и категорий.</li>
-                </ul>
-            </div>
-            <div class="border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pl-10 md:pt-0">
-                <h2 class="text-xl font-bold mb-4">Технические данные</h2>
-                <p class="text-sm text-gray-500 mb-4">Стек: React, TypeScript, Electron.</p>
-                <p class="text-sm text-gray-500">Хранение: Offline-first. Данные хранятся только на локальном диске пользователя.</p>
-                <div class="mt-8">
-                    <p class="text-sm font-bold">Сотрудничество и кастомизация:</p>
-                    <p class="text-sm">hattardu@yandex.ru</p>
+<body class="bg-white text-slate-800 font-['Inter']">
+    <nav class="p-6 max-w-6xl mx-auto flex justify-between">
+        <a href="index.html" class="text-slate-500 hover:text-slate-900 transition font-medium">← На главную</a>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">Mountain-ERP</h1>
+            <p class="text-lg text-slate-500">Система автоматизации учета и управления бизнесом.</p>
+        </header>
+
+        <section class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-sm uppercase tracking-wider text-slate-400 font-bold mb-4">Функциональные возможности</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="text-blue-500">•</span>
+                            <span><b>Полный цикл:</b> складской учет, закупки, рабочее место кассира (POS).</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="text-blue-500">•</span>
+                            <span><b>Модуль рассрочки:</b> автоматизация сделок по принципам «Мурабаха».</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="text-blue-500">•</span>
+                            <span><b>Аналитика:</b> отчеты P&L, эффективность товаров, прогноз поступлений.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="text-blue-500">•</span>
+                            <span><b>Offline-first:</b> локальное хранение базы данных без зависимости от серверов.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                    <h3 class="text-sm font-bold mb-3 uppercase text-slate-400">Технические детали</h3>
+                    <p class="text-sm text-slate-600">Стек: React + TypeScript + Electron. Локальное хранение данных.</p>
                 </div>
             </div>
-        </div>
+
+            <div class="space-y-6">
+                <div class="bg-slate-100 aspect-video rounded-2xl flex items-center justify-center text-slate-400 text-sm italic border border-slate-200">
+                    Скриншот интерфейса (Главная панель)
+                </div>
+                <div class="bg-slate-100 aspect-video rounded-2xl flex items-center justify-center text-slate-400 text-sm italic border border-slate-200">
+                    Скриншот отчетов аналитики
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
