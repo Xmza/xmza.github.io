@@ -3,44 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillForge | Описание</title>
+    <title>SkillForge</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .list-item { background: #faf8ff; border-radius: 8px; padding: 20px; border-left: 4px solid #a855f7; margin-bottom: 16px; }
+    </style>
 </head>
-<body class="bg-white text-slate-800 font-['Inter']">
-    <nav class="p-6 max-w-6xl mx-auto flex justify-between text-slate-500 font-medium">
-        <a href="index.html" class="hover:text-slate-900 transition">← На главную</a>
-    </nav>
+<body class="bg-white font-['Inter']">
+    <nav class="p-6 max-w-6xl mx-auto"><a href="index.html" class="text-slate-400 hover:text-purple-500 font-bold">← НА ГЛАВНУЮ</a></nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-12">
-        <header class="mb-12">
-            <h1 class="text-4xl font-bold text-slate-900 mb-4">SkillForge</h1>
-            <p class="text-lg text-slate-500 italic">RPG-система управления личной эффективностью.</p>
-        </header>
+    <main class="max-w-6xl mx-auto px-6 py-10">
+        <h1 class="text-5xl font-bold mb-4">SkillForge</h1>
+        <p class="text-xl text-slate-400 mb-12">Геймифицированная система управления жизнью.</p>
 
-        <section class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-8 text-slate-600">
-                <p>Приложение для планирования задач, превращающее процесс выполнения дел в прокачку игрового персонажа.</p>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-4 p-4 border border-slate-100 rounded-xl">
-                        <div class="text-purple-600 font-bold">RPG</div>
-                        <span>Уровни, таланты и система опыта за выполненные задачи.</span>
-                    </div>
-                    <div class="flex items-center gap-4 p-4 border border-slate-100 rounded-xl">
-                        <div class="text-purple-600 font-bold">TIME</div>
-                        <span>Встроенный хроно-трекер, виджеты и таймер Pomodoro.</span>
-                    </div>
-                    <div class="flex items-center gap-4 p-4 border border-slate-100 rounded-xl">
-                        <div class="text-purple-600 font-bold">UI</div>
-                        <span>Настройка тем: Cyberpunk, Windows 95, Sakura.</span>
-                    </div>
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="space-y-4">
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">RPG Система</h4>
+                    <p class="text-sm text-slate-600">Прокачка уровня персонажа за выполнение реальных ежедневных задач.</p>
+                </div>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Хроно-трекер</h4>
+                    <p class="text-sm text-slate-600">Умный учет времени с Pomodoro-таймером и выносным виджетом.</p>
+                </div>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Кузница привычек</h4>
+                    <p class="text-sm text-slate-600">Наглядное отслеживание серий достижений и прогресса талантов.</p>
+                </div>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Иммерсивные темы</h4>
+                    <p class="text-sm text-slate-600">Смена оформления: от Cyberpunk до классической эстетики Windows 95.</p>
                 </div>
             </div>
-            <div class="bg-purple-50 rounded-3xl p-8 flex flex-col items-center justify-center border border-purple-100 min-h-[400px]">
-                <span class="text-purple-200 font-bold text-6xl mb-4">⚒️</span>
-                <p class="text-purple-400 text-sm font-medium italic">Визуализация игровых механик и тем</p>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="col-span-2 bg-purple-50 border border-purple-100 rounded-3xl aspect-video flex items-center justify-center text-purple-200 italic font-bold">Main RPG Interface</div>
+                <div class="bg-purple-50 border border-purple-100 rounded-3xl aspect-square flex items-center justify-center text-purple-200 italic p-4 text-center">Habit Tracker</div>
+                <div class="bg-purple-50 border border-purple-100 rounded-3xl aspect-square flex items-center justify-center text-purple-200 italic p-4 text-center">Focus Widget</div>
+                <div class="col-span-2 bg-purple-50 border border-purple-100 rounded-3xl h-32 flex items-center justify-center text-purple-200 italic">Inventory & Talents</div>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>
