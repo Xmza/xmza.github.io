@@ -3,60 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain ERP | Описание</title>
+    <title>Mountain ERP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .list-item { background: #f8fafc; border-radius: 8px; padding: 20px; border-left: 4px solid #3b82f6; margin-bottom: 16px; }
+    </style>
 </head>
 <body class="bg-white text-slate-800 font-['Inter']">
-    <nav class="p-6 max-w-6xl mx-auto flex justify-between">
-        <a href="index.html" class="text-slate-500 hover:text-slate-900 transition font-medium">← На главную</a>
-    </nav>
+    <nav class="p-6 max-w-6xl mx-auto"><a href="index.html" class="text-slate-400 hover:text-blue-500 font-bold">← НА ГЛАВНУЮ</a></nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-12">
-        <header class="mb-12">
-            <h1 class="text-4xl font-bold text-slate-900 mb-4">Mountain-ERP</h1>
-            <p class="text-lg text-slate-500">Система автоматизации учета и управления бизнесом.</p>
-        </header>
+    <main class="max-w-6xl mx-auto px-6 py-10">
+        <h1 class="text-5xl font-bold mb-4">Mountain ERP</h1>
+        <p class="text-xl text-slate-400 mb-12">Комплексная система автоматизации предприятия.</p>
 
-        <section class="grid md:grid-cols-2 gap-12 items-start">
-            <div class="space-y-8">
-                <div>
-                    <h3 class="text-sm uppercase tracking-wider text-slate-400 font-bold mb-4">Функциональные возможности</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-blue-500">•</span>
-                            <span><b>Полный цикл:</b> складской учет, закупки, рабочее место кассира (POS).</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-blue-500">•</span>
-                            <span><b>Модуль рассрочки:</b> автоматизация сделок по принципам «Мурабаха».</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-blue-500">•</span>
-                            <span><b>Аналитика:</b> отчеты P&L, эффективность товаров, прогноз поступлений.</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-blue-500">•</span>
-                            <span><b>Offline-first:</b> локальное хранение базы данных без зависимости от серверов.</span>
-                        </li>
-                    </ul>
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="space-y-4">
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Склад и Закупки</h4>
+                    <p class="text-sm text-slate-600">Полный контроль товарных остатков, инвентаризация и управление поставками.</p>
                 </div>
-                
-                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
-                    <h3 class="text-sm font-bold mb-3 uppercase text-slate-400">Технические детали</h3>
-                    <p class="text-sm text-slate-600">Стек: React + TypeScript + Electron. Локальное хранение данных.</p>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Рабочее место (POS)</h4>
+                    <p class="text-sm text-slate-600">Быстрый интерфейс кассира с поддержкой сканеров и печати чеков.</p>
+                </div>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Аналитика P&L</h4>
+                    <p class="text-sm text-slate-600">Мгновенные отчеты о чистой прибыли, расходах и маржинальности товаров.</p>
+                </div>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Offline-First</h4>
+                    <p class="text-sm text-slate-600">База данных хранится локально. Высокая скорость работы без интернета.</p>
                 </div>
             </div>
 
-            <div class="space-y-6">
-                <div class="bg-slate-100 aspect-video rounded-2xl flex items-center justify-center text-slate-400 text-sm italic border border-slate-200">
-                    Скриншот интерфейса (Главная панель)
-                </div>
-                <div class="bg-slate-100 aspect-video rounded-2xl flex items-center justify-center text-slate-400 text-sm italic border border-slate-200">
-                    Скриншот отчетов аналитики
-                </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="col-span-2 bg-slate-50 border rounded-2xl aspect-video flex items-center justify-center text-slate-300 italic">Скриншот: Главная панель</div>
+                <div class="bg-slate-50 border rounded-2xl aspect-square flex items-center justify-center text-slate-300 italic p-4 text-center">Складской учет</div>
+                <div class="bg-slate-50 border rounded-2xl aspect-square flex items-center justify-center text-slate-300 italic p-4 text-center">Кассовая зона</div>
+                <div class="col-span-2 bg-slate-50 border rounded-2xl h-32 flex items-center justify-center text-slate-300 italic">Графики аналитики</div>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>
