@@ -10,29 +10,48 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fbfcfd; color: #1e293b; }
         .app-card { background: white; border-radius: 16px; padding: 32px; border-left: 6px solid; box-shadow: 0 4px 20px rgba(0,0,0,0.03); transition: all 0.3s ease; display: block; }
         .app-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+        .contact-btn { transition: all 0.2s ease; display: inline-flex; items-center: center; gap: 8px; padding: 12px 24px; border-radius: 99px; font-weight: 600; font-size: 14px; }
     </style>
 </head>
 <body>
-    <!-- Navbar с логотипом -->
-    <nav class="max-w-6xl mx-auto px-6 py-10 flex justify-between items-center">
+    <!-- Navbar -->
+    <nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
         <div class="flex items-center gap-3">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 20L9 11L12 15L16 6L20 20H4Z" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 20L9 11L12 15L16 6L20 20H4Z" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase">Mountain</span>
+            <span class="text-xl font-black tracking-tighter text-slate-900 uppercase">Mountain</span>
         </div>
-        <div class="text-sm font-semibold text-slate-400">hattardu@yandex.ru</div>
+        <div class="hidden md:flex gap-4">
+            <a href="https://t.me/hattardu" class="text-slate-400 hover:text-blue-500 text-sm font-bold transition">@hattardu</a>
+            <a href="mailto:hattardu@yandex.ru" class="text-slate-400 hover:text-blue-500 text-sm font-bold transition">hattardu@yandex.ru</a>
+        </div>
     </nav>
 
-    <!-- Мощный заголовок -->
+    <!-- Hero Section -->
     <header class="max-w-6xl mx-auto px-6 py-16 text-left">
         <h1 class="text-6xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tighter leading-tight">
             Инструменты <br><span class="text-blue-600">на пике</span> возможностей
         </h1>
-        <p class="text-xl text-slate-500 max-w-2xl leading-relaxed">
+        <p class="text-xl text-slate-500 max-w-2xl leading-relaxed mb-10">
             Экосистема оффлайн-приложений для бизнеса и личной эффективности. 
             Приватность данных по умолчанию, мощь профессионального софта в каждом пикселе.
         </p>
+
+        <!-- КНОПКИ СВЯЗИ -->
+        <div class="flex flex-wrap gap-4 mb-20">
+            <!-- Telegram -->
+            <a href="https://t.me/hattardu" class="contact-btn bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white border border-blue-100 shadow-sm">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.89.03-.25.38-.51 1.05-.78 4.12-1.79 6.87-2.97 8.24-3.55 3.92-1.66 4.73-1.95 5.26-1.96.12 0 .38.03.55.17.14.11.18.26.2.46-.02.1.01.18-.01.27z"/></svg>
+                <span>Telegram: @hattardu</span>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:hattardu@yandex.ru" class="contact-btn bg-slate-50 text-slate-600 hover:bg-slate-900 hover:text-white border border-slate-200 shadow-sm">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <span>hattardu@yandex.ru</span>
+            </a>
+        </div>
     </header>
 
     <!-- Сетка приложений -->
@@ -64,7 +83,7 @@
 
     </main>
 
-    <footer class="text-center py-12 border-t border-slate-100 text-slate-400 text-sm font-medium">
+    <footer class="text-center py-12 border-t border-slate-100 text-slate-400 text-sm font-medium uppercase tracking-tighter">
         © 2025 MOUNTAIN ECOSYSTEM
     </footer>
 </body>
