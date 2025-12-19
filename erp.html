@@ -5,43 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mountain ERP</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        .list-item { background: #f8fafc; border-radius: 8px; padding: 20px; border-left: 4px solid #3b82f6; margin-bottom: 16px; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .info-block { background: #f8fafc; border-radius: 12px; padding: 24px; border-left: 6px solid #3b82f6; margin-bottom: 20px; }
     </style>
 </head>
-<body class="bg-white text-slate-800 font-['Inter']">
-    <nav class="p-6 max-w-6xl mx-auto"><a href="index.html" class="text-slate-400 hover:text-blue-500 font-bold">← НА ГЛАВНУЮ</a></nav>
+<body class="bg-white text-slate-800">
+    <nav class="p-8 max-w-6xl mx-auto">
+        <a href="index.html" class="text-slate-400 hover:text-blue-600 font-bold tracking-tight">← НАЗАД К ЭКОСИСТЕМЕ</a>
+    </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-10">
-        <h1 class="text-5xl font-bold mb-4">Mountain ERP</h1>
-        <p class="text-xl text-slate-400 mb-12">Комплексная система автоматизации предприятия.</p>
+    <main class="max-w-6xl mx-auto px-6 py-4">
+        <h1 class="text-5xl font-extrabold mb-4 tracking-tighter italic">Mountain ERP</h1>
+        <p class="text-xl text-slate-400 mb-16">Управляй бизнесом на пике возможностей</p>
 
-        <div class="grid lg:grid-cols-2 gap-12">
-            <div class="space-y-4">
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Склад и Закупки</h4>
-                    <p class="text-sm text-slate-600">Полный контроль товарных остатков, инвентаризация и управление поставками.</p>
+        <div class="grid lg:grid-cols-2 gap-16">
+            <!-- Блоки БЕЗ ТОЧЕК -->
+            <div>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Склад и Закупки</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Полный контроль товарных остатков, инвентаризация и автоматизированное управление поставками.</p>
                 </div>
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Рабочее место (POS)</h4>
-                    <p class="text-sm text-slate-600">Быстрый интерфейс кассира с поддержкой сканеров и печати чеков.</p>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Рабочее место (POS)</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Интуитивный интерфейс кассира с поддержкой горячих клавиш, сканеров и мгновенной печати чеков.</p>
                 </div>
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Аналитика P&L</h4>
-                    <p class="text-sm text-slate-600">Мгновенные отчеты о чистой прибыли, расходах и маржинальности товаров.</p>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Аналитика P&L</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Профессиональные отчеты о прибылях и убытках, маржинальности и эффективности каждой позиции.</p>
                 </div>
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Offline-First</h4>
-                    <p class="text-sm text-slate-600">База данных хранится локально. Высокая скорость работы без интернета.</p>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Offline-First</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Ваши данные хранятся только у вас. Приложение работает молниеносно даже без интернета.</p>
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
-                <div class="col-span-2 bg-slate-50 border rounded-2xl aspect-video flex items-center justify-center text-slate-300 italic">Скриншот: Главная панель</div>
-                <div class="bg-slate-50 border rounded-2xl aspect-square flex items-center justify-center text-slate-300 italic p-4 text-center">Складской учет</div>
-                <div class="bg-slate-50 border rounded-2xl aspect-square flex items-center justify-center text-slate-300 italic p-4 text-center">Кассовая зона</div>
-                <div class="col-span-2 bg-slate-50 border rounded-2xl h-32 flex items-center justify-center text-slate-300 italic">Графики аналитики</div>
+            <!-- Сетка 4 фото -->
+            <div class="grid grid-cols-2 gap-4 h-fit">
+                <div class="col-span-2 bg-slate-50 border border-slate-100 rounded-3xl aspect-video overflow-hidden">
+                    <!-- <img src="img/erp-1.png" class="w-full h-full object-cover"> -->
+                    <div class="w-full h-full flex items-center justify-center text-slate-300 italic text-sm">Главный экран системы</div>
+                </div>
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl aspect-square flex items-center justify-center text-slate-300 italic text-xs p-4 text-center">Интерфейс склада</div>
+                <div class="bg-slate-50 border border-slate-100 rounded-3xl aspect-square flex items-center justify-center text-slate-300 italic text-xs p-4 text-center">Окно продажи</div>
+                <div class="col-span-2 bg-slate-50 border border-slate-100 rounded-3xl h-40 flex items-center justify-center text-slate-300 italic text-sm">Финансовые отчеты и графики</div>
             </div>
         </div>
     </main>
