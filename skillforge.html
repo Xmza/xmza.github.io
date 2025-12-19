@@ -5,30 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillForge | Описание</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-900">
-    <nav class="p-6 max-w-5xl mx-auto"><a href="index.html" class="text-sm text-gray-500">← Назад</a></nav>
-    <main class="max-w-5xl mx-auto px-6 py-10">
-        <h1 class="text-3xl font-bold mb-6">SkillForge</h1>
-        <div class="bg-gray-100 rounded-xl h-64 mb-10 flex items-center justify-center text-gray-400 italic">Скриншоты тем: Cyberpunk / Windows 95 / Sakura</div>
+<body class="bg-white text-slate-800 font-['Inter']">
+    <nav class="p-6 max-w-6xl mx-auto flex justify-between text-slate-500 font-medium">
+        <a href="index.html" class="hover:text-slate-900 transition">← На главную</a>
+    </nav>
 
-        <div class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-xl font-bold mb-4">Основные функции</h2>
-                <ul class="space-y-3 text-gray-600">
-                    <li>• Трекер задач с начислением опыта (XP) и золота за выполнение.</li>
-                    <li>• Хроно-трекер (Pomodoro) с выносным виджетом.</li>
-                    <li>• Система прогрессии персонажа и дерево талантов.</li>
-                    <li>• Кастомизация интерфейса через предустановленные темы.</li>
-                    <li>• Режим «Хардкор» со штрафами за невыполнение задач.</li>
-                </ul>
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">SkillForge</h1>
+            <p class="text-lg text-slate-500 italic">RPG-система управления личной эффективностью.</p>
+        </header>
+
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8 text-slate-600">
+                <p>Приложение для планирования задач, превращающее процесс выполнения дел в прокачку игрового персонажа.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-4 border border-slate-100 rounded-xl">
+                        <div class="text-purple-600 font-bold">RPG</div>
+                        <span>Уровни, таланты и система опыта за выполненные задачи.</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 border border-slate-100 rounded-xl">
+                        <div class="text-purple-600 font-bold">TIME</div>
+                        <span>Встроенный хроно-трекер, виджеты и таймер Pomodoro.</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 border border-slate-100 rounded-xl">
+                        <div class="text-purple-600 font-bold">UI</div>
+                        <span>Настройка тем: Cyberpunk, Windows 95, Sakura.</span>
+                    </div>
+                </div>
             </div>
-            <div class="border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pl-10 md:pt-0">
-                <h2 class="text-xl font-bold mb-4">Технологии</h2>
-                <p class="text-sm text-gray-500 mb-4">Приложение разработано на Electron. Поддерживает аппаратное ускорение интерфейса.</p>
-                <p class="text-sm font-bold uppercase tracking-tighter">100% Privacy</p>
+            <div class="bg-purple-50 rounded-3xl p-8 flex flex-col items-center justify-center border border-purple-100 min-h-[400px]">
+                <span class="text-purple-200 font-bold text-6xl mb-4">⚒️</span>
+                <p class="text-purple-400 text-sm font-medium italic">Визуализация игровых механик и тем</p>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
