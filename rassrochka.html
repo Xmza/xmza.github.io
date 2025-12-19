@@ -3,33 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain Рассрочка</title>
+    <title>Mountain Рассрочка | Описание</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-900">
-    <nav class="p-6 max-w-5xl mx-auto"><a href="index.html" class="text-sm text-gray-500">← Назад</a></nav>
-    <main class="max-w-5xl mx-auto px-6 py-10">
-        <h1 class="text-3xl font-bold mb-6">Mountain Рассрочка</h1>
-        <div class="bg-gray-100 rounded-xl h-64 mb-10 flex items-center justify-center text-gray-400 italic">Скриншоты: Редактор договора / График платежей</div>
+<body class="bg-white text-slate-800 font-['Inter']">
+    <nav class="p-6 max-w-6xl mx-auto text-slate-500 font-medium">
+        <a href="index.html" class="hover:text-slate-900 transition">← На главную</a>
+    </nav>
 
-        <div class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-xl font-bold mb-4">Спецификация ПО</h2>
-                <ul class="space-y-3 text-gray-600">
-                    <li>• Расчет параметров сделки по нормам Мурабаха (фиксированная наценка).</li>
-                    <li>• Система учета поручителей и их влияния на условия договора.</li>
-                    <li>• Автоматическая генерация графиков платежей с округлением.</li>
-                    <li>• Печать договоров и приходных кассовых ордеров (ПКО).</li>
-                    <li>• Ведение клиентской базы и «черного списка».</li>
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <header class="mb-16">
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">Mountain Рассрочка</h1>
+            <p class="text-lg text-slate-500 italic">Специализированная система учета этичных финансовых сделок.</p>
+        </header>
+
+        <section class="grid md:grid-cols-2 gap-16">
+            <div class="space-y-6 text-slate-600 leading-relaxed">
+                <p>Программа для управления продажами с отложенным платежом, разработанная с учетом принципов исламских финансов (Мурабаха).</p>
+                <ul class="grid grid-cols-1 gap-4">
+                    <li class="p-4 bg-slate-50 rounded-lg border-l-4 border-teal-500">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1 uppercase">Расчет Мурабаха</h4>
+                        <p class="text-sm">Фиксация наценки в момент сделки без скрытых комиссий.</p>
+                    </li>
+                    <li class="p-4 bg-slate-50 rounded-lg border-l-4 border-teal-500">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1 uppercase">Поручители</h4>
+                        <p class="text-sm">Динамическое изменение условий в зависимости от гарантий.</p>
+                    </li>
+                    <li class="p-4 bg-slate-50 rounded-lg border-l-4 border-teal-500">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1 uppercase">Печать документов</h4>
+                        <p class="text-sm">Формирование договоров и ордеров (ПКО) напрямую из программы.</p>
+                    </li>
                 </ul>
             </div>
-            <div class="border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pl-10 md:pt-0">
-                <h2 class="text-xl font-bold mb-4">Технические детали</h2>
-                <p class="text-sm text-gray-500 mb-2">База данных: IndexedDB (Dexie.js).</p>
-                <p class="text-sm text-gray-500 mb-4">Безопасность: Отсутствие внешних API-запросов. Локальное хранение.</p>
-                <a href="mailto:hattardu@yandex.ru" class="inline-block bg-black text-white px-6 py-2 rounded text-sm font-bold">Запросить Demo</a>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="bg-slate-100 rounded-2xl h-64 border border-slate-200 flex items-center justify-center text-slate-400 text-sm italic">Интерфейс базы клиентов</div>
+                <div class="bg-slate-100 rounded-2xl h-64 border border-slate-200 flex items-center justify-center text-slate-400 text-sm italic">Шаблон договора и графика</div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
