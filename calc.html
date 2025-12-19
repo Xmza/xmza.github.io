@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islamic Calculator | Описание</title>
+    <title>Islamic Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .list-item { background: #f0fdf4; border-radius: 8px; padding: 20px; border-left: 4px solid #10b981; margin-bottom: 16px; }
+    </style>
 </head>
-<body class="bg-white text-slate-800 font-['Inter']">
-    <nav class="p-6 max-w-6xl mx-auto text-slate-500 font-medium">
-        <a href="index.html" class="hover:text-slate-900 transition">← На главную</a>
-    </nav>
+<body class="bg-white font-['Inter']">
+    <nav class="p-6 max-w-6xl mx-auto"><a href="index.html" class="text-slate-400 hover:text-emerald-500 font-bold">← НА ГЛАВНУЮ</a></nav>
 
-    <main class="max-w-4xl mx-auto px-6 py-12 text-center">
-        <h1 class="text-4xl font-bold text-slate-900 mb-6">Islamic Installment Calculator</h1>
-        <p class="text-lg text-slate-500 mb-12">Профессиональный веб-инструмент для расчета торговой наценки.</p>
-        
-        <div class="bg-emerald-50 border border-emerald-100 rounded-3xl p-12 mb-12">
-            <div class="max-w-md mx-auto space-y-6 text-left">
-                <div class="flex items-center gap-4 text-emerald-800">
-                    <span class="font-bold tracking-wider">01.</span>
-                    <span>Мгновенный расчет итоговой стоимости.</span>
+    <main class="max-w-6xl mx-auto px-6 py-10">
+        <h1 class="text-5xl font-bold mb-4 text-slate-900">Islamic Calculator</h1>
+        <p class="text-xl text-slate-400 mb-12">Инструмент для прозрачных финансовых расчетов.</p>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="space-y-4">
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Умная наценка</h4>
+                    <p class="text-sm text-slate-600">Расчет фиксированной прибыли с учетом сроков и первоначального взноса.</p>
                 </div>
-                <div class="flex items-center gap-4 text-emerald-800">
-                    <span class="font-bold tracking-wider">02.</span>
-                    <span>Генерация графика платежей с округлением.</span>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">График платежей</h4>
+                    <p class="text-sm text-slate-600">Формирование таблицы выплат с удобным округлением сумм.</p>
                 </div>
-                <div class="flex items-center gap-4 text-emerald-800">
-                    <span class="font-bold tracking-wider">03.</span>
-                    <span>Система шаблонов для финансовых продуктов.</span>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Шаблоны условий</h4>
+                    <p class="text-sm text-slate-600">Быстрое переключение между разными финансовыми продуктами и наценками.</p>
                 </div>
-                <div class="flex items-center gap-4 text-emerald-800">
-                    <span class="font-bold tracking-wider">04.</span>
-                    <span>Адаптивный дизайн для мобильных устройств.</span>
+                <div class="list-item">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Адаптивность</h4>
+                    <p class="text-sm text-slate-600">Полноценная работа как на стационарных ПК, так и на мобильных устройствах.</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="text-slate-400 text-sm italic">
-            Приложение работает полностью в браузере или как локальный инструмент.
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class="col-span-2 bg-emerald-50 border border-emerald-100 rounded-3xl aspect-video flex items-center justify-center text-emerald-200 italic font-bold">Главный калькулятор</div>
+                <div class="bg-emerald-50 border border-emerald-100 rounded-3xl aspect-square flex items-center justify-center text-emerald-200 italic p-4 text-center">Настройки наценки</div>
+                <div class="bg-emerald-50 border border-emerald-100 rounded-3xl aspect-square flex items-center justify-center text-emerald-200 italic p-4 text-center">Mobile View</div>
+                <div class="col-span-2 bg-emerald-50 border border-emerald-100 rounded-3xl h-32 flex items-center justify-center text-emerald-200 italic">Экспорт в PDF</div>
+            </div>
         </div>
     </main>
 </body>
