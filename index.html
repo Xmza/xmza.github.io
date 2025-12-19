@@ -3,51 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain Ecosystem</title>
+    <title>Mountain Ecosystem | Программные решения</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: system-ui, -apple-system, sans-serif; background-color: #ffffff; color: #111827; }
-        .card { border: 1px solid #e5e7eb; transition: all 0.2s; cursor: pointer; }
-        .card:hover { border-color: #2563eb; background-color: #f9fafb; }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1e293b; }
+        .product-card { transition: all 0.3s ease; border: 1px solid #f1f5f9; }
+        .product-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05); border-color: #e2e8f0; }
     </style>
 </head>
 <body>
-    <nav class="max-w-5xl mx-auto px-6 py-10 flex justify-between items-center">
-        <span class="text-xl font-bold tracking-tight">MOUNTAIN</span>
-        <div class="space-x-6 text-sm">
-            <a href="mailto:hattardu@yandex.ru" class="text-gray-600 underline">hattardu@yandex.ru</a>
+    <nav class="border-b border-slate-100 sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tight text-slate-900 underline decoration-blue-500 decoration-2">MOUNTAIN</span>
+            <div class="space-x-8 text-sm font-medium text-slate-600">
+                <a href="mailto:hattardu@yandex.ru" class="hover:text-blue-600 transition">hattardu@yandex.ru</a>
+            </div>
         </div>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-6 mb-16">
-        <h1 class="text-4xl font-bold mb-4">Экосистема оффлайн-приложений</h1>
-        <p class="text-gray-600 max-w-2xl">Программные продукты для бизнеса и персональной продуктивности. Все данные хранятся локально на устройстве пользователя. Работа без подключения к сети.</p>
+    <header class="max-w-6xl mx-auto px-6 py-24">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Экосистема оффлайн-приложений</h1>
+        <p class="text-xl text-slate-500 max-w-2xl leading-relaxed">
+            Разработка инструментов для бизнеса и саморазвития. Приоритет на локальное хранение данных, приватность и производительность интерфейса.
+        </p>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 pb-20">
-        <div onclick="location.href='erp.html'" class="card p-8 rounded-xl">
-            <h3 class="text-xl font-bold mb-2">Mountain-ERP</h3>
-            <p class="text-gray-500 text-sm mb-4">Система автоматизации учета: склад, касса (POS) и финансовая аналитика.</p>
-            <span class="text-blue-600 text-sm font-semibold">Перейти к описанию →</span>
-        </div>
+    <main class="max-w-6xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- ERP -->
+            <a href="erp.html" class="product-card p-8 rounded-2xl bg-white">
+                <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-6 font-bold">01</div>
+                <h3 class="text-2xl font-bold mb-3 text-slate-900">Mountain ERP</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">Система автоматизации для малого и среднего бизнеса. Учет склада, рабочее место кассира и финансовая аналитика.</p>
+                <span class="text-blue-600 text-sm font-semibold">Подробнее о системе →</span>
+            </a>
 
-        <div onclick="location.href='rassrochka.html'" class="card p-8 rounded-xl">
-            <h3 class="text-xl font-bold mb-2">Mountain Рассрочка</h3>
-            <p class="text-gray-500 text-sm mb-4">Учет продаж с отложенным платежом по нормам Мурабаха и управление базой клиентов.</p>
-            <span class="text-blue-600 text-sm font-semibold">Перейти к описанию →</span>
-        </div>
+            <!-- SkillForge -->
+            <a href="skillforge.html" class="product-card p-8 rounded-2xl bg-white">
+                <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center mb-6 font-bold">02</div>
+                <h3 class="text-2xl font-bold mb-3 text-slate-900">SkillForge</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">Инструмент управления временем и задачами с использованием игровых механик RPG. Хроно-трекинг и визуализация прогресса.</p>
+                <span class="text-purple-600 text-sm font-semibold">Подробнее о приложении →</span>
+            </a>
 
-        <div onclick="location.href='skillforge.html'" class="card p-8 rounded-xl">
-            <h3 class="text-xl font-bold mb-2">SkillForge</h3>
-            <p class="text-gray-500 text-sm mb-4">Геймифицированная система управления задачами с элементами RPG и трекером времени.</p>
-            <span class="text-blue-600 text-sm font-semibold">Перейти к описанию →</span>
-        </div>
+            <!-- Rassrochka -->
+            <a href="rassrochka.html" class="product-card p-8 rounded-2xl bg-white">
+                <div class="w-10 h-10 bg-teal-50 text-teal-600 rounded-lg flex items-center justify-center mb-6 font-bold">03</div>
+                <h3 class="text-2xl font-bold mb-3 text-slate-900">Mountain Рассрочка</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">Управление продажами с отложенным платежом по принципам Мурабаха. Учет поручителей и контроль графиков.</p>
+                <span class="text-teal-600 text-sm font-semibold">Подробнее о программе →</span>
+            </a>
 
-        <div onclick="location.href='calc.html'" class="card p-8 rounded-xl">
-            <h3 class="text-xl font-bold mb-2">Islamic Calculator</h3>
-            <p class="text-gray-500 text-sm mb-4">Инструмент для расчета торговой наценки и графиков платежей.</p>
-            <span class="text-blue-600 text-sm font-semibold">Перейти к описанию →</span>
+            <!-- Calculator -->
+            <a href="calc.html" class="product-card p-8 rounded-2xl bg-white">
+                <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center mb-6 font-bold">04</div>
+                <h3 class="text-2xl font-bold mb-3 text-slate-900">Islamic Calculator</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">Профессиональный калькулятор для расчета торговой наценки и формирования графиков платежей.</p>
+                <span class="text-emerald-600 text-sm font-semibold">Подробнее об инструменте →</span>
+            </a>
         </div>
     </main>
+
+    <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-100 text-slate-400 text-sm">
+        <p>© 2025 Mountain. Разработка программного обеспечения.</p>
+    </footer>
 </body>
 </html>
