@@ -3,45 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islamic Calculator</title>
+    <title>Islamic Calculator | Mountain Ecosystem</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        .list-item { background: #f0fdf4; border-radius: 8px; padding: 20px; border-left: 4px solid #10b981; margin-bottom: 16px; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fbfcfd; }
+        .info-block { background: white; border-radius: 12px; padding: 24px; border-left: 6px solid #10b981; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
     </style>
 </head>
-<body class="bg-white font-['Inter']">
-    <nav class="p-6 max-w-6xl mx-auto"><a href="index.html" class="text-slate-400 hover:text-emerald-500 font-bold">← НА ГЛАВНУЮ</a></nav>
+<body class="text-slate-800">
+    <nav class="p-8 max-w-6xl mx-auto">
+        <a href="index.html" class="text-slate-400 hover:text-emerald-600 font-bold tracking-tight uppercase text-sm">← НАЗАД К ЭКОСИСТЕМЕ</a>
+    </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-10">
-        <h1 class="text-5xl font-bold mb-4 text-slate-900">Islamic Calculator</h1>
-        <p class="text-xl text-slate-400 mb-12">Инструмент для прозрачных финансовых расчетов.</p>
+    <main class="max-w-6xl mx-auto px-6 py-4">
+        <h1 class="text-5xl font-extrabold mb-4 tracking-tighter italic text-slate-900">Islamic Calculator</h1>
+        <p class="text-xl text-slate-400 mb-16 font-medium tracking-tight">Профессиональный инструмент Murabaha Edition</p>
 
-        <div class="grid lg:grid-cols-2 gap-12">
-            <div class="space-y-4">
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Умная наценка</h4>
-                    <p class="text-sm text-slate-600">Расчет фиксированной прибыли с учетом сроков и первоначального взноса.</p>
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Прозрачный расчет</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Мгновенный расчет итоговой стоимости товара с учетом фиксированной наценки, исключая элементы неопределенности.</p>
                 </div>
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">График платежей</h4>
-                    <p class="text-sm text-slate-600">Формирование таблицы выплат с удобным округлением сумм.</p>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Умный график</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Генерация детального плана платежей с округлением до удобных сумм для упрощения взаиморасчетов.</p>
                 </div>
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Шаблоны условий</h4>
-                    <p class="text-sm text-slate-600">Быстрое переключение между разными финансовыми продуктами и наценками.</p>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Система шаблонов</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Быстрое переключение между различными финансовыми продуктами и типами наценок вашей организации.</p>
                 </div>
-                <div class="list-item">
-                    <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Адаптивность</h4>
-                    <p class="text-sm text-slate-600">Полноценная работа как на стационарных ПК, так и на мобильных устройствах.</p>
+                <div class="info-block">
+                    <h4 class="font-bold text-slate-900 uppercase text-xs tracking-widest mb-2">Адаптивный UX</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Интерфейс оптимизирован для быстрой работы на любых устройствах, обеспечивая точность расчетов в одно касание.</p>
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
-                <div class="col-span-2 bg-emerald-50 border border-emerald-100 rounded-3xl aspect-video flex items-center justify-center text-emerald-200 italic font-bold">Главный калькулятор</div>
-                <div class="bg-emerald-50 border border-emerald-100 rounded-3xl aspect-square flex items-center justify-center text-emerald-200 italic p-4 text-center">Настройки наценки</div>
-                <div class="bg-emerald-50 border border-emerald-100 rounded-3xl aspect-square flex items-center justify-center text-emerald-200 italic p-4 text-center">Mobile View</div>
-                <div class="col-span-2 bg-emerald-50 border border-emerald-100 rounded-3xl h-32 flex items-center justify-center text-emerald-200 italic">Экспорт в PDF</div>
+            <div class="grid grid-cols-2 gap-4 h-fit">
+                <div class="col-span-2 bg-emerald-50 border border-emerald-100 rounded-3xl aspect-video flex items-center justify-center text-emerald-200 italic font-bold">Окно калькулятора</div>
+                <div class="bg-emerald-50 border border-emerald-100 rounded-3xl aspect-square flex items-center justify-center text-emerald-200 italic p-4 text-center text-xs">Настройка наценки</div>
+                <div class="bg-emerald-50 border border-emerald-100 rounded-3xl aspect-square flex items-center justify-center text-emerald-200 italic p-4 text-center text-xs">Мобильный вид</div>
+                <div class="col-span-2 bg-emerald-50 border border-emerald-100 rounded-3xl h-40 flex items-center justify-center text-emerald-200 italic font-bold">График платежей</div>
             </div>
         </div>
     </main>
